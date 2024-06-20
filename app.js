@@ -319,7 +319,7 @@ app.get("/question/:id", (req, res) => {
 });
 
 // Listening on Port
-const port = 9000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log("Server is runnning on port " + port);
